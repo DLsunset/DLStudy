@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  Study
+//
+//  Created by qyhy on 2018/7/4.
+//  Copyright © 2018年 QYhengye. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGTH [UIScreen mainScreen].bounds.size.height
+#define SafeAreaTopHeight (SCREEN_HEIGTH == 812.0 ? 88 : 64)
+#define SafeAreaTopBar (SCREEN_HEIGTH == 812.0 ? 44 : 20)
+#define THEMECOLOR  [UIColor DL_colorWithHex:0x1aaba8]  //[UIColor DL_colorWithHex:0x28c1bd]
+#import "UILabel+DLAddition.h"
+#import "UIColor+DLAddition.h"
+#import "UIButton+DLAddition.h"
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "QYHYNetWorkTool.h"
+#import "UIScrollView+EmptyDataSet.h"
+
+static NSString *ThemeFontName = @"PingFangSC-Regular";
+#define RealValue(value) (value)/375.0f*[UIScreen mainScreen].bounds.size.width
+
+#endif /* PrefixHeader_pch */
